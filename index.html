@@ -1,91 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commit to Hiring Me</title>
+    <title>.:Welcome to my page:.</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
         body {
             background-color: #121212;
+            background-image: radial-gradient(rgba(0, 200, 0, 0.3), black 120%);
+            min-height: 100vh;
             color: #e0e0e0;
-            font-family: 'Fira Code', monospace;
+            font-family: 'VT323', monospace;
+            font-size: 20px;
+            display: flex;
             margin: 40px;
+            text-shadow: 0 0 2px #C8C8C8;
+            position: relative;
         }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+        }
+
         h1, h2, h3 {
             color: #76ff03;
+            margin: 0 0 10px;
         }
+
         a {
             color: #64ffda;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+        
+        p {
+        margin: 0 0 10px;
+    	font-size: 20px;
+		}
+
+		a {
+    	color: #64ffda;
+    	text-decoration: none;
+		}
+        a:hover {
+    	text-decoration: underline;
+		}
+
         .container {
             max-width: 800px;
             margin: auto;
         }
+
         hr {
             border-color: #76ff03;
         }
+        .card {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border: 2px solid #76ff03;
+            box-shadow: 0 0 15px #76ff03;
+            text-align: center;
+            border-radius: 10px;
+            .cursor {
+    color: #76ff03;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    animation: blink 0.8s infinite;
+    }
+    @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to the dark side</h1>
         <p><em>...because light attracts &#128027; &#128027; :)</em></p>
         <hr>
-        
+		<div class="card">
         <h2>Arkadiusz Jakubowski</h2>
         <p><strong>Tel.:</strong> (+48) 512 035 663</p>
         <p><strong>E-mail:</strong> <a href="mailto:work@arkadiuszjakubowski.com">work@arkadiuszjakubowski.com</a></p>
-        <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/arkadiusz-jakubowski-5b5604a5/">linkedin.com</a></p>
-        
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arkadiusz-jakubowski-5b5604a5/">linkedin.com</a></p>
+		</div>
         <hr>
-        
+
         <h3>Professional Summary</h3>
         <p>Experienced and certified RPA Developer specializing in Blue Prism, UiPath, and VBA development</p>
-        
+
         <h3>Core Competencies</h3>
         <ul>
             <li><strong>RPA:</strong> Blue Prism, UiPath</li>
-            <li><strong>Process Optimization:</strong> Identifying and automating process accross different areas</li>
+            <li><strong>Process Optimization:</strong> Identifying and automating processes across different areas</li>
             <li><strong>Technical proficiency:</strong> VBA, SAP Scripting, VB</li>
             <li><strong>Project Leadership:</strong> Managing robotics projects during entire robot's lifecycle</li>
             <li><strong>F&A:</strong> Background in AP/AR/GL, banking, and financial operations</li>
-            <li><strong>Analitycal Thinking:</strong> Strong problem-solving skills, even under high-pressure constraints</li>
+            <li><strong>Analytical Thinking:</strong> Strong problem-solving skills, even under high-pressure constraints</li>
             <li><strong>Stakeholder Collaboration:</strong> Effective communicator with business analysts, subject matter experts, and project managers</li>
-            
         </ul>
-        
+
         <h3>Professional Experience</h3>
         <p><strong>Robotics System Engineer/Analyst</strong> - SIX (Feb 2022 – Present)</p>
         <ul>
             <li>Designed and developed RPA solutions</li>
             <li>Conducted process analyses and documentation</li>
         </ul>
-        
+
         <p><strong>RPA Developer / Analyst</strong> - Onwelo SA (Apr 2020 – Jan 2022)</p>
         <ul>
             <li>Built RPA solutions using UiPath and Blue Prism</li>
             <li>Developed VBA-based solutions</li>
         </ul>
-        
+
         <h3>Certifications</h3>
         <ul>
             <li>Blue Prism AD01 Certification</li>
             <li>UiPath Professional Developer Certification</li>
             <li>Advanced VBA Programming</li>
         </ul>
+
         <h3>Hobbies</h3>
         <ul>
-            <li><p>Ham radio, especially CW and DXing. QRZ.COM profile URL: <a href="https://www.sp7aj.com" target="_blank">QRZ.COM</a></p></li>
-            <li><p>Retro electronics</p></li>
-            <li><p>Music producing</p></li>
-            <li><p>Programming</p></li>
+            <li>Ham radio, especially CW and DXing. QRZ.COM profile URL: <a href="https://www.qrz.com/db/SP7AJ" target="_blank">QRZ.COM</a></li>
+            <li>Retro electronics</li>
+            <li>Music producing</li>
+            <li>Programming</li>
         </ul>
-        
     </div>
 </body>
 </html>
